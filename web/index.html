@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BanditForge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="eyebrow">Bandit simulation</p>
+        <h1>BanditForge</h1>
+        <p>Compare epsilon-greedy and UCB exploration.</p>
+      </header>
+      <section class="panel">
+        <label>Arms (probabilities)
+          <input id="armsInput" value="0.1,0.4,0.2,0.6" />
+        </label>
+        <div class="grid">
+          <label>Rounds <input id="roundsInput" type="number" value="200" /></label>
+          <label>Epsilon <input id="epsilonInput" type="number" step="0.05" value="0.1" /></label>
+        </div>
+        <div class="actions">
+          <button id="greedyButton">Run epsilon-greedy</button>
+          <button id="ucbButton" class="ghost">Run UCB</button>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Summary</h2>
+        <div id="summary" class="summary"></div>
+      </section>
+    </main>
+    <div class="flare"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
