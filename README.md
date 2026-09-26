@@ -1,11 +1,13 @@
-# BanditForge
+# Multi Armed Bandit Simulator
 
-BanditForge simulates multi-armed bandits with epsilon-greedy and UCB strategies.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+
+Multi Armed Bandit Simulator simulates multi-armed bandits with epsilon-greedy and UCB strategies.
 
 ## Quick start
 
 ```bash
-python -m app.server --port 5173
+python -m multi_armed_bandit_simulator.server --port 5173
 ```
 
 Open http://localhost:5173
